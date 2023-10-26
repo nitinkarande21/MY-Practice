@@ -17,7 +17,12 @@ myName = 'Nitin' ;
 
 myName = 'Aarya' ;
 
-const myCity = 'pune'; //const keyword intialization value is must.
+console.log(myName);
+
+
+const myCity = 'pune'; //const keyword intialization value is must. we can not declere const again and agin 
+//myCity='mumbai'
+console.log(myCity);
 
 
 
