@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+
+    <title>combinator</title>
+    <style>
+        /*div p{
+            color: brown;
+        }*/
+        /*div>p {
+            color: blue;
+        }*/
+        /*div+p{
+            color: blue;
+            font-size: 20;
+        }*/
+        div~p{
+            color: aqua;
+            font-size: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- selectors that are created using the relations between elements -->
+
+    <!-- descendends (space), Child (>), adjacent siblings(+), general siblings(~)tild -->
+
+    <div class="div1">
+        <p>para 1</p>
+        <p>para 2</p>
+        <section class="div2">
+            <p>para 3</p>
+            <p>para 4</p>
+        </section>
+    </div>
+    <p>para 5</p>
+    <p>para 6</p>
+    </div>
+</body>
+
+</html>
