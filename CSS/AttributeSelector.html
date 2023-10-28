@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+
+    <title>attribute selector</title>
+
+    <style>
+        a[class~='sample'] {
+            color: rgb(0, 255, 55);
+        }
+
+        a[target='_blank'] {
+            color: blue;
+        }
+
+        p[title^='panda'] {
+            background-color: yellow;
+        }
+
+        p[title*='app'] {
+            background-color: chocolate;
+        }
+
+        p[title$='happy'] {
+            background-color: greenyellow;
+        }
+
+        p[title^=' panda'] {
+            background-color: rgb(76, 0, 255);
+
+            p[class='check'] {
+
+                color: rgb(165, 42, 63);
+
+            }
+
+            p[class|='lorem'] {
+
+                color: rgb(24, 81, 226);
+
+            }
+    </style>
+</head>
+
+<body>
+    <!-- It applies styling on the basis of attribute and the basis of attibute valuve of the html element  
+  1 [attribute ] & 2[attribute = 'value'](exeact value) attribute 3 [attribute~='value']should conatin this value 4 [attribute|=valuve]exatch or follwoed by the hypen(-)
+5[attribute^='valuve']the value should start given value  6 [attribute$='valuve']end valuve should match   7[attribute*='valuve'] anything match in words-->
+
+    <a href="">sample </a>
+    <a href="" target="_self">sample2</a>
+    <a href="" target="_parent">sample3</a>
+    <a href="" target="_blank">sample4</a>
+
+    <p class="check" title="panda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi beatae
+        minus voluptate
+        excepturi nemo
+        porro, fuga alias unde pariatur debitis ab corrupti perspiciatis dignissimos cum consectetur modi officiis
+        adipisci.</p>
+    <p class="check sample" title="panda-happy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+        reiciendis, odit expedita
+        cupiditate iusto
+        exercitationem reprehenderit assumenda laboriosam nemo iure tenetur explicabo beatae error autem! Quaerat nobis
+        aliquid fuga animi.</p>
+    <p class="lorem" title="happy-panda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio
+        cumque nobis! Distinctio perspiciatis
+        non delectus, ad qui sed unde, eligendi totam dolorum impedit eos, accusantium dolor enim ducimus
+
+    <p class="lorem-sample" title=" panda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio
+        cumque nobis!
+        Distinctio perspiciatis
+        non delectus, ad qui sed unde, eligendi totam dolorum impedit eos, accusantium dolor enim ducimus aspernatur.
+    </p>
+
+    <p class="lorem-sample" title="app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio cumque
+        nobis!
+        Distinctio perspiciatis
+        non delectus, ad qui sed unde, eligendi totam dolorum impedit eos, accusantium dolor enim ducimus aspernatur.
+    </p>
+</body>
+
+</html>
