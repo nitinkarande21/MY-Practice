@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+
+    <title>psudo element</title>
+    <!-- selector:: psudo-class {
+         property: value; 
+        }-->
+        <style>
+            p::first-line{
+                color: chocolate;
+            }
+            p::first-letter{
+                color: rgb(48, 30, 210);
+            }
+        #icon::before{
+            content:'%%%%%%' ;
+        }
+        #icon::after{
+            content: '****';
+        }
+        ol li::marker{
+            color: blue;
+            font-size: 20px;
+        }
+        p::selection{
+            background-color: pink;
+            color: white;
+        }
+        </style>
+</head>
+
+<body>
+    <!-- applies styling to specific part of the thml -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium temporibus impedit aspernatur maiores
+        sed. Excepturi maiores quo illum ipsam et quaerat, corrupti saepe beatae incidunt facere quos non dolores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo earum culpa, cumque autem voluptas
+        eligendi aspernatur? Illo rerum perferendis beatae omnis doloribus delectus ipsam? Nisi molestiae quos eveniet
+        tenetur.</p><br>
+        <p id="icon">this is the new world</p>
+
+        <ol>
+            <li>first one </li>
+            <li>second one </li>
+            <li>third one </li>
+        </ol>
+        <ul>
+            <li>first one </li>
+            <li>second one </li>
+            <li>thrid one </li>
+        </ul>
+
+</body>
+
+</html>
