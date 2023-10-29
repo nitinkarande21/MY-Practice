@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+
+    <title>Borders</title>
+    <style>
+        .solid {
+            height: 100px;
+            width: 200px;
+            /* border-style: solid; */
+            /* border-width: thin; */
+            /* border-width: thick; */
+            /* border-width: medium; */
+            /* border-width: 15px; */
+             /* border-width: 5px 10px 15px 20px; */
+            /* border-width: 10px 20px 30px; */
+
+            /* border-color: green; */
+            /* border-color: red green yellow orange; */
+            /* border-top:solid; */
+            /* border-color: red yellow orange; */
+            /* shorthand poperty: width style color */
+            border:5px solid red;
+            border: radius 30px;
+
+
+
+        }
+        .dotted {
+            border-style: dotted;
+            height: 200px;
+            width: 250px;
+            /* border-color: darkred; */
+            border-top:solid;
+            border-top-color:blue;
+            border-right:double;
+            border-right-color: rgb(189, 107, 130);
+        }
+        .dashed {
+            border-style: dashed;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;
+        }
+        .outset {
+            border-style: outset;
+        }
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        button:hover{
+            border-style: hidden;
+        }
+        button{
+            border-style: dotted;
+        }
+        .mixed{
+            border-style: dotted double solid groove;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we can provide borders to almost and all tag and elements of html -->
+    <div class="solid">border solid</div>
+    <br>
+    <div class="dotted">border dotted</div>
+    <br>
+    <div class="dashed">dashed border</div>
+    <br>
+    <div class="double"> border double</div>
+    <br>
+    <div class="groove">groove border</div>
+    <br>
+
+    <div class="ridge">ridge border</div>
+    <br>
+
+    <div class="inset">inset border</div>
+    <br>
+    <div class="outset">outset border</div>
+    <br>
+    <div class="none">none border</div>
+    <br>
+    <div class="hidden">hidden border</div>
+    <br>
+    <button>entry</button>
+    <br> <br>
+    <div class="mixed">mixed border</div>
+</body>
+
+</html>
