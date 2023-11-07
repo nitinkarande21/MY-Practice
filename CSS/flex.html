@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        /* flexbox
+        direction,flex-warp,flex-flow,justify-containt,align-items, align-containt, */
+        .container {
+            display: flex;
+             /* flex-direction: column;  */
+            flex-direction: row; 
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-wrap:wrap;
+            /* flex-wrap: nowrap; default value */
+            /* flex-wrap: wrap-reverse; */
+            background-color: cornflowerblue;
+            /* justiy containt:center,end,space around,space between,space evenly  */
+            justify-content:center; 
+            /* align-items: center;  */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: stretch;
+            height: 400px;
+             align-content: center; 
+
+        }
+
+        .container>div {
+            background-color: brown;
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+            width: 150px;
+        }
+        /* properties for flex items
+        order,flex-grow, flex-shrink,flex-basis,align-self,flex */
+        .one{
+            /* order:4; */
+            /* flex-grow: 1; */
+            flex-basis: 200px;
+        }
+        .two{
+            /* order:3; */
+            /* flex-grow: 0; */
+            /* flex: shrink 5; */
+            align-self: self-end;
+
+        }
+        .three{
+            /* order:2; */
+            /* flex-grow: 4; */
+            align-self: center;
+        }
+        .four{
+            /* order:1; */
+            /* flex-grow: 0; */
+            flex-basis: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <!-- <div>5</div> -->
+        <!-- <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div> -->
+
+    </div>
+
+</body>
+
+</html>

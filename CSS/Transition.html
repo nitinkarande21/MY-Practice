@@ -1,28 +1,35 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transition</title>
     <style>
-    div{
-    
-        background-color: blue;
-        height: 150px;
-        width: 150px;
-        border: 2px solid red;
-        transition: width 5s, height 3s;
-        transition-delay: 2s;
-    }
-    div:hover{
-        width: 400px;
-        height: 300px;
-    }
-        </style>
+        div {
+
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            border: 2px solid red;
+            transition: width 5s, height 3s;
+            transition-delay: 1s;
+            /* ease:(s-slow m-fast, e-slow) linear:throught unfiform , ease-in: s-slow, m and e same speed, ease-out: s and m same speed & end-slow, ease-in-out:s-slow,m-fast,end-fast*/
+            transition-timing-function:linear;
+        }
+
+        div:hover {
+            width: 400px;
+            height: 300px;
+            transform:rotate(90deg);
+        }
+    </style>
 </head>
+
 <body>
     <div>
 
     </div>
-    
+
 </body>
+
 </html>
