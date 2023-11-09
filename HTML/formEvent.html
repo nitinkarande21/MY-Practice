@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-event</title>
+</head>
+<body>
+    <form action="" onsubmit="alert('valued submited')">
+        <label for="">Example of onfocus and onblur</label>
+        <input type="text" name="" id="" onblur="blurFn()" onfocus="focusFn()">
+    </form>
+    <br><br><hr>
+    <input type="text" name="" id="" value="sample" onchange="console.log('value changed');" oninput="console.log('value added');">
+    <br><br>
+    <input type="text" name="fname" title="enter valid value" pattern="^[a-zA-Z\s+$]" oninvalid="console.log('invalid value');">
+    <br><br><label for="search">search</label>
+    <input type="search" id="search" name="search" onsearch="alert('value search')">
+    <input type="button" value="submit">
+
+    <script>
+        function blurFn(){
+            console.log("input field is blur now");
+        }
+        function focusFn(){
+            console.log("input field is focused now");
+        }
+        
+
+        
+    </script>
+</body>
+</html>

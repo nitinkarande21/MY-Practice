@@ -65,14 +65,49 @@
         <label for="date">date</label>
         <input type="date" name="date" id="date">
         <br><br>
+        <label for="telephone">enter the telephone number</label>
+        <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            title="follow the format as 123-45-678">
+        <br><br>
+        <label for="number">number</label>
+        <input type="number" name="roll" min="20" step="2">
+        <br><br>
         <label for="">date time</label>
-        <input type="datetime-local" name="datetime" id="datetime">
+        <input type="datetime-local" name="datetime" id="datetime" required>
         <br><br>
         <label for="file">file</select></label>
         <input type="file" name="file" id="file" multiple>
         <br><br>
+        <!-- <input type="image" src="./../assets/R.png" name="img" alt=""> -->
         <label for="ratings">ratings 0-5</label>
-        <input type="range" name="ratings" id="ratings" min="0" max="5">
+        <input type="range" name="ratings" id="ratings" min="0" max="5" step="10" onchange="check()">
+        <br><br>
+        <label for="sates">select your state</label>
+        <select name="state" id="state">
+            <option>......select sates....</option>
+            <option value="maharastra">maharastra</option>
+            <option value="karnatak">karnatak</option>
+            <option value="jamuu kashmir" selected>jammu kashmir</option>
+            <option value="usttar pradesh">uttar pradesh</option>
+            <option value="andra pradesh">andra pradesh</option><br><br><br>
+        
+                
+            <label for="address"></label>
+            <textarea name="address" id="add" cols="30" rows="10">address would be here
+                
+            </textarea>
+        </select>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
