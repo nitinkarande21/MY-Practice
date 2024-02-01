@@ -1,0 +1,22 @@
+.main_container{
+
+    font-size: 20px;
+    color: rgb(86, 15, 30);
+    text-align: center;
+    
+
+
+    height: 80vh;
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url(https://static.photocdn.pt/images/articles/2017/05/24/iStock-466345427.jpg);
+}
+
+.heading1_main{
+    padding-top: 20vh;
+}
+.main_container >h5{
+    font-size: 16px;
+    font-weight: 100px;
+}
