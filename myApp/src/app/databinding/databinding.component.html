@@ -1,0 +1,25 @@
+<p>{{data}}</p>
+<p>{{amount ===122452}}</p>
+
+
+<!--we can pass the function to the interpolation -->
+<div>{{test()}}</div>
+
+<!--assingment is not possible with the interpolatjon -->
+
+<!--we can use equality opreator with interpolation -->
+
+<!--we can write expression in the interpolation -->
+
+<div>{{amount*7}}</div>
+
+<p>{{!ismatch}}</p>
+
+<input type="text" [value]="name">Enter name <br><br>
+<button (click)="clickEvent()">click event</button><br>
+{{clickEventData}} <br>
+
+<input type="text" [(ngModel)] = "city"> Enter city <br>
+Entered city = {{city}}
+
+<!--<p>{{x++}}</p> we can not use increament and decremnet-->

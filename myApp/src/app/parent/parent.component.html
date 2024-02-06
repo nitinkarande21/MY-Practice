@@ -1,0 +1,15 @@
+<p>parent works!</p>
+
+<input type="text" [(ngModel)] = "city" > enter city name 
+<input type="text" [(ngModel)] = "sName"> enteer name surname 
+<br><br>
+
+{{state}}
+------------------------------------
+
+
+<app-child [cityName]="city" (data)="dataFromChild($event)"></app-child>
+
+------------------------------------
+
+<app-lifecyclehooks [surname]="sName"></app-lifecyclehooks>
