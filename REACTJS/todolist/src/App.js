@@ -1,24 +1,17 @@
-// how to create component 
-// functional componant
-// first letter should be capital of component 
-
-import "./app.css"
-import Navigation from "./component/Navigation";
-import Main from "./component/Main";
-import { Bio } from "./component/Bio";
+import { useState } from "react";
+import Todo from "./components/Todo";
 
 function App() {
 
-  return (
-    <div>
-      <Navigation />
-      <Main/>
-      <Bio/>
+  //let arr=["task1", "task2", "task3", "task4"]
 
+  const [arr,setArr] = useState([])
+  return (
+    <div style={{ border: "5px solid red", width: "500px", height: "400px", backgroundColor: "pink", display: "flex",justifyContent:"center",alignItems:"center" }}>
+      <Todo task={arr} setArr={setArr} />
     </div>
 
   );
-
 }
 
 export default App;
