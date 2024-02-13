@@ -11,6 +11,9 @@ import { ChildComponent } from './child/child.component';
 import { SubComponent } from './sub/sub.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
+import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { SignUpReactiveFormComponent } from './sign-up-reactive-form/sign-up-reactive-form.component';
+import { ViewChild1Component } from './view-child1/view-child1.component';
 
 
 
@@ -26,7 +29,11 @@ const routes: Routes = [
   {path: "parent", component:ChildComponent},
   {path: "subject", component:SubComponent},
   {path: "subject1", component:Sub1Component},
-  {path: "subject2", component: Sub2Component}
+  {path: "subject2", component: Sub2Component},
+  {path: "templateform",component:TemplatedrivenformComponent},
+  {path: "signUpForm", component:SignUpReactiveFormComponent},
+  {path: "Viewchild1", component:ViewChild1Component},
+  {path: 'admin', loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)}
 ];
 
 

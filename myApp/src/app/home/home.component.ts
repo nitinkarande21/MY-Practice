@@ -14,6 +14,8 @@ export class HomeComponent {   //component class: properties,constructor,lifecyc
   name: string = "Nitin";
   name2!: string;
   name3: any;
+  pipe:boolean =false;
+  date="10/3/2024";
 
   constructor(private router: Router, private dataService :DataService) { }  //constructor section
 
@@ -35,5 +37,13 @@ export class HomeComponent {   //component class: properties,constructor,lifecyc
   }
   directives() {
     this.router.navigateByUrl("directives")
+  }
+
+  purePipe(){
+    this.pipe = true;
+  }
+
+  adminSignup(){
+    this.router.navigateByUrl('admin/adminSignUp')
   }
 }
